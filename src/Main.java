@@ -51,6 +51,22 @@ public class Main {
             }
 
             board.print();
+            if (steps == 5) {
+                while(returnInput) {
+                    returnInput = false;
+                    System.out.print("Draw!\nWould you like to play again? (Y/N): ");
+                    String in = input.next();
+                    if (in.equals("y")) {
+                        start();
+                    } else if (in.equals("n")) {
+                        System.exit(0);
+                    } else {
+                        input.next();
+                        returnInput = true;
+                    }
+                }
+            }
+
             while(returnInput) {
                 System.out.println("O:");
                 returnInput = false;
