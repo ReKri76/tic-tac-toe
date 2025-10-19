@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+      start()
     }
     private static void start() {
         Board board = new Board();
@@ -100,7 +101,6 @@ public class Main {
                 }
             }
         }
-    }
 }
 
 }
