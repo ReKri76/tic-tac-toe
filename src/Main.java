@@ -82,7 +82,7 @@ public class Main {
                 }
 
                 try {
-                    board.add(i, j, 1);
+                    board.add(i, j, 2);
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
                     returnInput = true;
